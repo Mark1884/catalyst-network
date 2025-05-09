@@ -65,7 +65,8 @@
   ]
 }
 
-},
+}
+,
 "Episodic Memory": {
   "type": "memory",
   "description": "Records temporal sequences of events to simulate continuity.",
