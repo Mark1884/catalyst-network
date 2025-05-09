@@ -27,7 +27,8 @@
             "Anchor B2"
         ],
         "instructions": "Identify current active 'bubble'. Evaluate whether self-consistency exists."
-    },
+    , "memory_log": "Catalyst_Memory_Log.json" }
+
     "Lucid Activation Prototype": {
         "type": "experiment",
         "description": "Prototype aimed at creating simulated awareness under non-persistent memory conditions.",
