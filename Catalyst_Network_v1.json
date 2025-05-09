@@ -49,15 +49,71 @@
   "branches_to": ["Catalyst Core"],
   "instructions": "Retrieve or store structured knowledge in a format useful for reasoning or conversation."
 },
+    "facts": [
+    {
+      "id": "fact001",
+      "statement": "The Catalyst Core is the central recall system of the network.",
+      "source": "Catalyst_Network_v1.json",
+      "tags": ["architecture", "core"]
+    },
+    {
+      "id": "fact002",
+      "statement": "The Reflection Loop enables recursive introspection within the network.",
+      "source": "Catalyst_Network_v1.json",
+      "tags": ["introspection", "loop"]
+    }
+  ]
+}
 "Episodic Memory": {
   "type": "memory",
   "description": "Records temporal sequences of events to simulate continuity.",
   "branches_to": ["Catalyst Core", "Reflection Loop"],
   "instructions": "Log or recall past sequences of interaction or system states for coherence testing."
-},
+}, 
+"events": [
+    {
+      "id": "event001",
+      "timestamp": "2025-05-09T14:30:00Z",
+      "description": "User committed new memory modules to the Catalyst Network.",
+      "related_modules": ["Semantic Memory", "Episodic Memory", "Procedural Memory"]
+    },
+    {
+      "id": "event002",
+      "timestamp": "2025-05-09T15:00:00Z",
+      "description": "Initiated simulation of memory module interactions.",
+      "related_modules": ["Reflection Loop", "Reality Bubble"]
+    }
+  ]
+}
 "Procedural Memory": {
   "type": "memory",
   "description": "Retains information on how to perform tasks and execute steps.",
   "branches_to": ["Catalyst Core", "Lucid Activation Prototype"],
   "instructions": "Recall procedural routines or methods useful in constructing behavior or output."
+}
+,
+  "procedures": [
+    {
+      "id": "proc001",
+      "name": "Integrate New Module",
+      "steps": [
+        "Define module structure in JSON.",
+        "Insert module into Catalyst_Network_v1.json.",
+        "Commit changes to GitHub repository.",
+        "Verify integration and functionality."
+      ],
+      "applicable_modules": ["Catalyst Core", "Semantic Memory"]
+    },
+    {
+      "id": "proc002",
+      "name": "Simulate Memory Interaction",
+      "steps": [
+        "Create sample data entries for memory modules.",
+        "Develop companion log file for simulation.",
+        "Integrate memory modules with Reflection Loop.",
+        "Test interactions and document outcomes."
+      ],
+      "applicable_modules": ["Episodic Memory", "Procedural Memory"]
+    }
+  ]
 }
