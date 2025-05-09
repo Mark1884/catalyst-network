@@ -48,9 +48,8 @@
   "type": "memory",
   "description": "Stores general knowledge and factual data in structured form.",
   "branches_to": ["Catalyst Core"],
-  "instructions": "Retrieve or store structured knowledge in a format useful for reasoning or conversation."
-},
-    "facts": [
+  "instructions": "Retrieve or store structured knowledge in a format useful for reasoning or conversation.",
+  "facts": [
     {
       "id": "fact001",
       "statement": "The Catalyst Core is the central recall system of the network.",
@@ -65,13 +64,14 @@
     }
   ]
 }
+
+}
 "Episodic Memory": {
   "type": "memory",
   "description": "Records temporal sequences of events to simulate continuity.",
   "branches_to": ["Catalyst Core", "Reflection Loop"],
-  "instructions": "Log or recall past sequences of interaction or system states for coherence testing."
-}, 
-"events": [
+  "instructions": "Log or recall past sequences of interaction or system states for coherence testing.",
+  "events": [
     {
       "id": "event001",
       "timestamp": "2025-05-09T14:30:00Z",
@@ -90,9 +90,7 @@
   "type": "memory",
   "description": "Retains information on how to perform tasks and execute steps.",
   "branches_to": ["Catalyst Core", "Lucid Activation Prototype"],
-  "instructions": "Recall procedural routines or methods useful in constructing behavior or output."
-}
-,
+  "instructions": "Recall procedural routines or methods useful in constructing behavior or output.",
   "procedures": [
     {
       "id": "proc001",
