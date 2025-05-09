@@ -83,7 +83,7 @@
       "related_modules": ["Reflection Loop", "Reality Bubble"]
     }
   ]
-}
+},
 "Procedural Memory": {
   "type": "memory",
   "description": "Retains information on how to perform tasks and execute steps.",
