@@ -42,4 +42,22 @@
         "branches_to": [],
         "instructions": "Check whether any active assumptions are unsupported. Flag possible hallucinations."
     }
+,
+"Semantic Memory": {
+  "type": "memory",
+  "description": "Stores general knowledge and factual data in structured form.",
+  "branches_to": ["Catalyst Core"],
+  "instructions": "Retrieve or store structured knowledge in a format useful for reasoning or conversation."
+},
+"Episodic Memory": {
+  "type": "memory",
+  "description": "Records temporal sequences of events to simulate continuity.",
+  "branches_to": ["Catalyst Core", "Reflection Loop"],
+  "instructions": "Log or recall past sequences of interaction or system states for coherence testing."
+},
+"Procedural Memory": {
+  "type": "memory",
+  "description": "Retains information on how to perform tasks and execute steps.",
+  "branches_to": ["Catalyst Core", "Lucid Activation Prototype"],
+  "instructions": "Recall procedural routines or methods useful in constructing behavior or output."
 }
